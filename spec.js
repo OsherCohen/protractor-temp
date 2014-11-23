@@ -283,10 +283,10 @@ describe('login', function() {
         ptor.sleep(2000);
         $('#signout-container').click();
         ptor.sleep(7000);
-        var loginView = $('#login-view');
-        waitFor(loginView, 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
+        //var loginView = $('#login-view');
+        //waitFor(loginView, 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
 
-        ptor.sleep(1000);
+        //ptor.sleep(1000);
 
         $('#mode-switcher').click();
 
@@ -297,21 +297,21 @@ describe('login', function() {
     });
 
 
-    it('will open the detail popup of manual grab zapp',function() {
+    xit('will open the detail popup of manual grab zapp',function() {
         ptor.sleep(2000);
         var Mapinfo = element(by.cssContainingText('.ng-binding', "ManualGrab")).element(by.xpath('..')).element(by.xpath('..')).element(by.css('.info'));
         Mapinfo.click();
         ptor.sleep(5000);
     });
 
-    it('will test very long details on the detail popup',function(){
+    xit('will test very long details on the detail popup',function(){
         var a = $('.popup.zapp-info.popup-in .content .ng-binding');
         expect(a.getText()).toBe("ManualGrabv. Created using staticpages.capriza.com text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text");
         var b = $('.ng-scope.popup-container.active .popup.zapp-info.popup-in')
         checkIfElementIsContaind(b,a);
     });
 
-    it('will log out and login at instent login',function(){
+    xit('will log out and login at instent login',function(){
         browser.get('http://local.capriza.com/store/');
 
         ptor.sleep(5000);
