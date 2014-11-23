@@ -124,7 +124,7 @@ describe('login', function() {
     //no reconnection
     //it('will redresh the page',function (){
     //    browser.refresh();
-    //    waitFor($('#login-view .header'), 'getText', function(newText){ return 'Productivity Awaits.' === newText})
+    //    waitFor($('#login-view .header'), 'getText', function(newxt){ return 'Productivity Awaits.' === newText})
     //});
 
     //this can locke osher@osher
@@ -164,6 +164,14 @@ describe('login', function() {
 
     it('will login to osher@osher user',function() {
         enterLoginPage('osher@osher.co.il', 'capriza123');
+    });
+
+    it ('will check the passcode',function(){
+
+        $('.focus-changer').click();
+        $('.numeric-keyboard').sendKeys('1111');
+
+
         var pageContent = $('#page-content');
         expect(pageContent.getInnerHtml()).toBeTruthy();
         waitLocation(pageContent, {x: 0});
