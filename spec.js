@@ -289,7 +289,7 @@ describe('login', function() {
 
         //ptor.sleep(1000);
 
-        $('#mode-switcher').click();
+        //$('#mode-switcher').click();
 
         enterLoginPage('wrapper@eggplant.com', 'capriza123');
         var pageContent = $('#page-content');
@@ -298,21 +298,21 @@ describe('login', function() {
     });
 
 
-    xit('will open the detail popup of manual grab zapp',function() {
+    it('will open the detail popup of manual grab zapp',function() {
         ptor.sleep(2000);
         var Mapinfo = element(by.cssContainingText('.ng-binding', "ManualGrab")).element(by.xpath('..')).element(by.xpath('..')).element(by.css('.info'));
         Mapinfo.click();
         ptor.sleep(5000);
     });
 
-    xit('will test very long details on the detail popup',function(){
+    it('will test very long details on the detail popup',function(){
         var a = $('.popup.zapp-info.popup-in .content .ng-binding');
         expect(a.getText()).toBe("ManualGrabv. Created using staticpages.capriza.com text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text");
         var b = $('.ng-scope.popup-container.active .popup.zapp-info.popup-in')
         checkIfElementIsContaind(b,a);
     });
 
-    xit('will log out and login at instent login',function(){
+    it('will log out and login at instent login',function(){
         browser.get('http://local.capriza.com/store/');
 
         ptor.sleep(5000);
