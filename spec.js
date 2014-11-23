@@ -313,15 +313,12 @@ describe('login', function() {
     });
 
     it('will log out and login at instant login',function(){
-       // browser.get('http://local.capriza.com/store/');
-    $('.ng-scope.popup-container.active .exit.fa.ca-close.ng-isolate-scope').click();
+        $('.ng-scope.popup-container.active .exit.fa.ca-close.ng-isolate-scope').click();
         $('#navigation-bar .menu').click();
         ptor.sleep(5000);
         $('#signout-container span').click();
         ptor.sleep(7000);
         waitFor($('#login-view .header'), 'getText', function(newText){ return 'Productivity Awaits.' === newText})
-
-
 
         ptor.sleep(5000);
         $('#navigation-bar .menu').click();
@@ -329,7 +326,10 @@ describe('login', function() {
 
         var loginView = $('#login-view');
         waitFor(loginView, 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
-        ptor.sleep(2000);
+        ptor.sleep(3000);
+        $('#mode-switcher').click();
+        ptor.sleep(3000);
+
 
         $('#login-view .form-container .email.input-container input').clear().sendKeys('instantlogin@instantlogin.com');
         $('.email.input-container button').click();
