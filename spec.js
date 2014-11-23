@@ -312,8 +312,16 @@ describe('login', function() {
         checkIfElementIsContaind(b,a);
     });
 
-    it('will log out and login at instent login',function(){
-        browser.get('http://local.capriza.com/store/');
+    it('will log out and login at instant login',function(){
+       // browser.get('http://local.capriza.com/store/');
+    $('.ng-scope.popup-container.active .exit.fa.ca-close.ng-isolate-scope').click();
+        $('#navigation-bar .menu').click();
+        ptor.sleep(5000);
+        $('#signout-container span').click();
+        ptor.sleep(7000);
+        waitFor($('#login-view .header'), 'getText', function(newText){ return 'Productivity Awaits.' === newText})
+
+
 
         ptor.sleep(5000);
         $('#navigation-bar .menu').click();
