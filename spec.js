@@ -167,12 +167,15 @@ describe('login', function() {
     });
 
     it ('will check the passcode',function(){
-        ptor.sleep(2000);
+        ptor.sleep(1000);
         $('.focus-changer').click();
-        ptor.sleep(2000);
+        ptor.sleep(1000);
         $('.numeric-keyboard').sendKeys('1111');
-
-
+        ptor.sleep(1000);
+        $('.focus-changer').click();
+        ptor.sleep(1000);
+        $('.numeric-keyboard').sendKeys('1111');
+        ptor.sleep(2000);
         var pageContent = $('#page-content');
         expect(pageContent.getInnerHtml()).toBeTruthy();
         waitLocation(pageContent, {x: 0});
