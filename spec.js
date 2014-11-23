@@ -40,7 +40,6 @@ describe('login', function() {
         waitFor($('#password-login-message-error'), 'getText', function(newText){ return expected === newText})
     }
 
-
     function enterLoginPage(username,password){
         // add username
         element(by.model('login.email')).clear().sendKeys(username);
@@ -275,10 +274,20 @@ describe('login', function() {
 
     it('will exite the pop up',function(){
         $('.popup.zapp-request.popup-in .header .exit').click();
+        ptor.sleep(4000);
     });
 
     it('will log out and log in to wrapper@eggplant',function(){
-        logoutOrg();
+        //logoutOrg();
+        $('#navigation-bar .menu').click();
+        $('#signout-container').click();
+        var loginView = $('#login-view');
+        waitFor(loginView, 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
+
+        ptor.sleep(1000);
+
+        $('#mode-switcher').click();
+
         enterLoginPage('wrapper@eggplant.com', 'capriza123');
         var pageContent = $('#page-content');
         expect(pageContent.getInnerHtml()).toBeTruthy();
