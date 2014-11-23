@@ -167,8 +167,9 @@ describe('login', function() {
     });
 
     it ('will check the passcode',function(){
-
+        ptor.sleep(2000);
         $('.focus-changer').click();
+        ptor.sleep(2000);
         $('.numeric-keyboard').sendKeys('1111');
 
 
