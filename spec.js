@@ -280,9 +280,10 @@ describe('login', function() {
     it('will log out and log in to wrapper@eggplant',function(){
         //logoutOrg();
         $('#navigation-bar .menu').click();
-        ptor.sleep(2000);
+        ptor.sleep(5000);
         $('#signout-container').click();
         ptor.sleep(7000);
+        waitFor($('#login-view .header'), 'getText', function(newText){ return 'Productivity Awaits.' === newText})
         //var loginView = $('#login-view');
         //waitFor(loginView, 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
 
