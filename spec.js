@@ -281,7 +281,7 @@ describe('login', function() {
         //logoutOrg();
         $('#navigation-bar .menu').click();
         ptor.sleep(5000);
-        $('#signout-container').click();
+        $('#signout-container span').click();
         ptor.sleep(7000);
         waitFor($('#login-view .header'), 'getText', function(newText){ return 'Productivity Awaits.' === newText})
         //var loginView = $('#login-view');
