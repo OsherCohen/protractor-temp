@@ -280,7 +280,9 @@ describe('login', function() {
     it('will log out and log in to wrapper@eggplant',function(){
         //logoutOrg();
         $('#navigation-bar .menu').click();
+        ptor.sleep(2000);
         $('#signout-container').click();
+        ptor.sleep(7000);
         var loginView = $('#login-view');
         waitFor(loginView, 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
 
