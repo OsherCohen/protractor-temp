@@ -1,0 +1,150 @@
+{
+    "org": {
+        "derectTV": {
+            "username": "capriza.monitoring@dws.com",
+            "password": "azirpac321",
+            "zapps":{
+                "Customer Activation":{
+                    "elements":["#page0mc8223", "#page0mc56","#page0mc83",".real-button"]
+                }
+            }
+        },
+        "Tivo":{
+            "username": "capriza.monitoring@tivo.com",
+            "password": "azirpac321",
+            "zapps":{
+                "MGT Approvals":{
+                    "elements":["#identity-page.page.active"]
+                },
+                "Bugzilla":{
+                    "elements":["#identity-page.page.active"]
+                }
+            }
+        },
+        "Brocade":{
+            "username":"capriza.monitoring@brocade.com",
+            "password":"azirpac321",
+            "zapps":{
+                "Approvals":{
+                    "elements":["#page0mc41","#page0mc74","#page0mc75","#page0mc96"]
+                }
+            }
+        },
+        "Ciber":{
+            "username":"capriza.monitoring@ciber.com",
+            "password":"azirpac321",
+            "zapps":{
+                "Time Entry PS ":{
+                    "elements":["#identity-username0","#identity-password"]
+                }
+            }
+        },
+        "BezeInt":{
+            "username":"capriza.monitoring@bezeqint.co.il",
+            "password":"azirpac321",
+            "zapps":{
+                "חפש לקוח/צור הזדמנות":{
+                    "elements":["#identity-username0","#identity-password"]
+                },
+                "ניהול הזדמנויות":{
+                    "elements":["#identity-username0","#identity-password"]
+                },
+                "הזדמנות ללקוח חדש":{
+                    "elements":["#identity-username0","#identity-password"]
+                }
+            }
+        },
+
+        "Dell": {
+            "username": "capriza.monitoring@dell.com",
+            "password": "azirpac321",
+            "zapps": {
+                "Mobile VITOC": {
+                    "elements": ["#identity-username0","#identity-password"]
+                },
+
+                "Dell HR Directory": {
+                    "elements": ["#identity-username0","#identity-password"]
+                },
+                "Ask My HR":{
+                    "elements": ["#identity-username0","#identity-password"]
+                },
+                "MyVolunteering":{
+                    "elements": ["#identity-username0","#identity-password"]
+                },
+                "Dell IT Clarity":{
+                    "elements": ["#identity-username0","#identity-password"]
+                },
+                "Dell Glossary":{
+                    "elements": ["#identity-username0","#identity-password"]
+                }
+            }
+        },
+        "Olympus":{
+            "username":"capriza.monitoring@olympus.com",
+            "password":"azirpac321",
+            "zapps":{
+                "Pipeline Mgmt V2":{
+                    "elements":["#identity-username0","#identity-password"]
+                }
+            }
+        },
+        "Colonial":{
+            "username":"capriza.monitoring@colpipe.com",
+            "password":"azirpac321",
+            "zapps":{
+                "Create SR v3.1":{
+                    "elements":["#identity-username0","#identity-password"]
+                }
+            }
+        },
+
+        "KKR":{
+            "username":"capriza.monitoring@kkr.com",
+            "password":"azirpac321",
+            "zapps":{
+                "WallCross 4.2":{
+                    "elements":["#mc61","#mc67"]
+                },
+                "Deal Centra":{
+                    "elements": ["#identity-username0","#identity-password"]
+                },
+                "CPG Contacts":{
+                    "elements": ["#identity-username0","#identity-password"]
+                },
+                "Employee Search":{
+                    "elements":["#page0mc98input","#page0mc192"]
+                }
+            }
+        },
+
+        "JDSU":{
+            "username":"capriza.monitoring@jdsu.com",
+            "password":"azirpac321",
+            "zapps":{
+                "iExpense":{
+                    "elements":["#page0mc41input","#page0mc39input","#page0mc56"]
+                },
+                "CERT Approvals":{
+                    "elements":["#page0mc71input","#page0mc72input",".real-button"]
+                }
+            }
+        },
+
+        "Bezeq":{
+            "username":"capriza.monitoring@bezeq.co.il",
+            "password":"azirpac321",
+            "zapps":{
+                "IPCentrex mobile 27":{
+                    "elements":["#identity-username0","#identity-password"]
+                },
+                "IPCentrex mobile":{
+                    "elements":["#identity-username0","#identity-password"]
+                },
+                "הפעלת עקוב אחרי":{
+                    "elements":["#identity-username0","#identity-password"]
+                }
+            }
+        }
+    }
+}
