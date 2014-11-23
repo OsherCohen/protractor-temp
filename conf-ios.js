@@ -2,8 +2,8 @@ exports.config = {
     seleniumAddress: 'http://localhost:4723/wd/hub',
     defaultTimeoutInterval: 360000,
 
-    //specs: ['spec.js'],
-    specs: ['customer-sanity.js'],
+    specs: ['spec.js'],
+    //specs: ['customer-sanity.js'],
 
     capabilities: {
     	'autoWebview': 'true',
