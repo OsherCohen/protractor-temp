@@ -64,12 +64,9 @@ describe('customer-sanity', function() {
         // add password
         element(by.model('login.password')).clear().sendKeys(password);
 
-        submitButton = $('.input-container.password-login-button');
+        submitButton = $('.input-container.password-login-button button');
         expect(submitButton.isDisplayed()).toBeTruthy();
         submitButton.click();
-        var pageContent = $('#page-content');
-        expect(pageContent.getInnerHtml()).toBeTruthy();
-        waitLocation(pageContent, {x: 0});
     }
 
     function enterMailForgotPassword(email){
