@@ -63,7 +63,7 @@ describe('customer-sanity', function() {
 
         // add password
         element(by.model('login.password')).clear().sendKeys(password);
-
+ptor.sleep(1000);
         submitButton = $('.input-container.password-login-button button');
         expect(submitButton.isDisplayed()).toBeTruthy();
         submitButton.click();
