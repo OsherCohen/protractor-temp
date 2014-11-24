@@ -314,39 +314,20 @@ describe('login', function() {
 
     it('will log out and login at instant login',function(){
         $('.popup.zapp-info.popup-in .exit.fa.ca-close.ng-isolate-scope').click();
-       console.log('1 ');
         $('#navigation-bar .menu').click();
-        ptor.sleep(5000);
-        console.log('2 ');
+        ptor.sleep(1000);
 
         $('#signout-container span').click();
-        ptor.sleep(7000);
-        console.log('3 ');
-
+        ptor.sleep(3000);
         waitFor($('#login-view .header'), 'getText', function(newText){ return 'Productivity Awaits.' === newText})
-
-        ptor.sleep(5000);
-
-        ptor.sleep(6000);
-        console.log('4 ');
+        ptor.sleep(1000);
 
         $('#mode-switcher').click();
-        ptor.sleep(9000);
-
-        console.log('5 ');
-
+        ptor.sleep(1000);
         $('#login-view .form-container .email.input-container input').clear().sendKeys('instantlogin@instantlogin.com');
-
-        console.log('6 ');
-
         $('.email.input-container button').click();
-        console.log('7 ');
-
         var pageContent = $('#page-content');
-        console.log('8 ');
-
         waitLocation(pageContent, {x: 0});
-
         expect($('#zapps-container  .zapp-add').isDisplayed()).toBeTruthy();
     });
 });
