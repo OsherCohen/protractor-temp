@@ -3,7 +3,9 @@ exports.config = {
     defaultTimeoutInterval: 360000,
 
     //specs: ['spec.js'],
-    specs: ['customer-sanity.js'],
+    //specs: ['customer-sanity.js'],
+    spec: ['protractor-zapp-test.js'],
+
 
     capabilities: {
     	'autoWebview': 'true',

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b93d2f6-8356-4d53-b6ef-5c117511528e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer-sanity.js" afterPath="$PROJECT_DIR$/customer-sanity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="1b93d2f6-8356-4d53-b6ef-5c117511528e" name="Default" comment="" />
     <ignored path="protractor-temp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/customer-sanity.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.64640886" vertical-offset="918" max-vertical-offset="3924">
-              <caret line="64" column="73" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
+              <caret line="64" column="72" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -60,8 +57,8 @@
       <file leaf-file-name="resources.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="2808">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="2808">
+              <caret line="3" column="51" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -185,11 +182,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1360" height="738" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1360" height="738" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33118972" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33118972" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981412" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -247,8 +244,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="2808">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="2808">
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -256,7 +253,7 @@
     <entry file="file://$PROJECT_DIR$/customer-sanity.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64640886" vertical-offset="918" max-vertical-offset="3924">
-          <caret line="64" column="73" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
+          <caret line="64" column="72" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="72" />
           <folding />
         </state>
       </provider>
