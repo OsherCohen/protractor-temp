@@ -132,10 +132,10 @@ describe('login', function() {
         ptor.sleep(10000)
         RunZappByName('testing');
         ptor.sleep(10000)
-        wdBrowser.contexts().then(function (contexts) {
-            console.log(contexts);
-            wdBrowser.context(contexts[2]);
-        });
+        //wdBrowser.contexts().then(function (contexts) {
+        //    console.log(contexts);
+        //    wdBrowser.context(contexts[2]);
+        //});
     });
 
     xit ('will log in to SF',function(){
