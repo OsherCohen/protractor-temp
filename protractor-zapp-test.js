@@ -131,6 +131,6 @@ describe('login', function() {
         RunZappByName('testing');
         ptor.sleep(10000)
         $('#page0mc43input').sendKeys('sfdemo@capriza.com')
-        ptor.sleep(10000);l
+        ptor.sleep(10000);
     })
 });
