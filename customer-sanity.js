@@ -111,10 +111,32 @@ describe('customer-sanity', function() {
         })
     }
 
-    it('should load the login page', function(){
-        browser.get('https://app.capriza.com/v2/');
-        ptor.waitForAngular();
-        browser.driver.manage().window().setSize(1024, 768);
+    //it('should load the login page', function(){
+    //    browser.get('https://app.capriza.com/v2/');
+    //    ptor.waitForAngular();
+    //    browser.driver.manage().window().setSize(1024, 768);
+    //});
+    //
+    //var loginView, submitButton;
+    //it('should get some elements', function(){
+    //    loginView = $('#login-view');
+    //});
+    //
+    //it('show wait for login page to be displayed', function(){
+    //    waitFor(loginView, 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
+    //});
+    //
+    //
+    //it('should click on mode switcher', function(){
+    //    ptor.sleep(2000)
+    //    $('#mode-switcher').click();
+    //});
+
+    it('should change to the store context', function(){
+        wdBrowser.contexts().then(function (contexts) {
+            console.log(contexts);
+            wdBrowser.context(contexts[1]);
+        });
     });
 
     var loginView, submitButton;
@@ -126,11 +148,13 @@ describe('customer-sanity', function() {
         waitFor(loginView, 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
     });
 
-
-    it('should click on mode switcher', function(){
-        ptor.sleep(2000)
-        $('#mode-switcher').click();
+    it('should click on mode switcher-new', function(){
+        ptor.sleep(2000);
+        expect($('#mode-switcher').getText()).toBe('Have a password?');
+        $('#mode-switcher').click(); ptor.sleep(1000);
+        expect($('#mode-switcher').getText()).toBe("Don't have a password?");
     });
+
 
     //Starting zapp test
 
