@@ -132,13 +132,16 @@ describe('login', function() {
         ptor.sleep(10000)
         RunZappByName('testing');
         ptor.sleep(10000)
-        //wdBrowser.contexts().then(function (contexts) {
-        //    console.log(contexts);
-        //    wdBrowser.context(contexts[2]);
-        //});
     });
 
-    xit ('will log in to SF',function(){
+    it('will do somting fun',function(){
+        wdBrowser.contexts().then(function (contexts) {
+            console.log(contexts);
+            wdBrowser.context(contexts[2]);
+        });
+    })
+
+    it ('will log in to SF',function(){
     $('#page0mc43input').sendKeys('sfdemo@capriza.com')
         ptor.sleep(10000);
     })
