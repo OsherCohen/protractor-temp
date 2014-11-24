@@ -326,8 +326,8 @@ describe('login', function() {
 
         ptor.sleep(3000);
 
-        $('#login-view').click();
-        waitFor(loginView, 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
+        //var loginView = $('#login-view');
+        waitFor('#login-view', 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
         ptor.sleep(3000);
         $('#mode-switcher').click();
         ptor.sleep(3000);
