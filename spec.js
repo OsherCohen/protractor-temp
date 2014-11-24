@@ -313,7 +313,7 @@ describe('login', function() {
     });
 
     it('will log out and login at instant login',function(){
-        $('.ng-scope.popup-container.active .exit.fa.ca-close.ng-isolate-scope').click();
+        $('.popup.zapp-info.popup-in .exit.fa.ca-close.ng-isolate-scope').click();
         $('#navigation-bar .menu').click();
         ptor.sleep(5000);
         $('#signout-container span').click();
