@@ -4,7 +4,7 @@ exports.config = {
 
     //specs: ['spec.js'],
     //specs: ['customer-sanity.js'],
-    spec: ['protractor-zapp-test.js'],
+    specs: ['protractor-zapp-test.js'],
 
 
     capabilities: {
