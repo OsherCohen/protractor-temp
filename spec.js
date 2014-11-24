@@ -324,7 +324,9 @@ describe('login', function() {
         $('#navigation-bar .menu').click();
         $('#signout-container').click();
 
-        var loginView = $('#login-view');
+        ptor.sleep(3000);
+
+        $('#login-view').click();
         waitFor(loginView, 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
         ptor.sleep(3000);
         $('#mode-switcher').click();
