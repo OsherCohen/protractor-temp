@@ -324,11 +324,11 @@ describe('login', function() {
         $('#navigation-bar .menu').click();
         $('#signout-container').click();
 
-        ptor.sleep(3000);
+        //ptor.sleep(3000);
 
         //var loginView = $('#login-view');
-        waitFor('#login-view', 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
-        ptor.sleep(3000);
+        //waitFor('#login-view', 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
+        ptor.sleep(6000);
         $('#mode-switcher').click();
         ptor.sleep(3000);
 
