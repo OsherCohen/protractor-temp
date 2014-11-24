@@ -83,7 +83,7 @@ describe('login', function() {
     }
     
     it('should change to the store context', function(){
-    	wdBrowser.contexts().then(function (contexts) { 
+    	wdBrowser.contexts().then(function (contexts) {
         	console.log(contexts);
         	wdBrowser.context(contexts[1]);
     	});
@@ -194,10 +194,8 @@ describe('login', function() {
         waitFor($('#login-view .header'), 'getText', function(newText){ return 'Productivity Awaits.' === newText})
             enterLoginPage('','');
             loginPasswordMessage('Email address must be specified');
-
             enterLoginPage('dcdcdcdc','');
             loginPasswordMessage('Invalid email address')
-
             enterLoginPage('nor_real@osher.co.il','');
             loginPasswordMessage('Password must be specified');
     })
@@ -224,7 +222,6 @@ describe('login', function() {
       $('#page-content').click();
     });
     //Zapp detail popup box
-
 
     it('will show the detail box of Map zapp',function(){
        ptor.sleep(2000);
@@ -302,7 +299,7 @@ describe('login', function() {
         ptor.sleep(2000);
         var Mapinfo = element(by.cssContainingText('.ng-binding', "ManualGrab")).element(by.xpath('..')).element(by.xpath('..')).element(by.css('.info'));
         Mapinfo.click();
-        ptor.sleep(5000);
+        ptor.sleep(2000);
     });
 
     it('will test very long details on the detail popup',function(){
