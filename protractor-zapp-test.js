@@ -125,10 +125,11 @@ describe('login', function() {
 
     it('will will login to wrapper@eggplant', function () {
         enterLoginPage('wrapper@eggplant.com', 'capriza123');
-        ptor.sleep(7000);
+
     });
 
     it('will run EggPlant-zap zapp',function() {
+        ptor.sleep(10000)
         RunZappByName('testing');
         ptor.sleep(10000)
         wdBrowser.contexts().then(function (contexts) {
@@ -137,7 +138,7 @@ describe('login', function() {
         });
     });
 
-    it ('will log in to SF',function(){
+    xit ('will log in to SF',function(){
     $('#page0mc43input').sendKeys('sfdemo@capriza.com')
         ptor.sleep(10000);
     })
