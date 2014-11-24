@@ -314,29 +314,39 @@ describe('login', function() {
 
     it('will log out and login at instant login',function(){
         $('.popup.zapp-info.popup-in .exit.fa.ca-close.ng-isolate-scope').click();
+       console.log('1 ');
         $('#navigation-bar .menu').click();
         ptor.sleep(5000);
+        console.log('2 ');
+
         $('#signout-container span').click();
         ptor.sleep(7000);
+        console.log('3 ');
+
         waitFor($('#login-view .header'), 'getText', function(newText){ return 'Productivity Awaits.' === newText})
 
         ptor.sleep(5000);
-        $('#navigation-bar .menu').click();
-        $('#signout-container').click();
 
-        //ptor.sleep(3000);
-
-        //var loginView = $('#login-view');
-        //waitFor('#login-view', 'isDisplayed', function(isDisplayed){return isDisplayed;}, 30 * 1000)
         ptor.sleep(6000);
-      //$('#mode-switcher').click();
+        console.log('4 ');
+
+        $('#mode-switcher').click();
         ptor.sleep(9000);
 
+        console.log('5 ');
 
-        //$('#login-view .form-container .email.input-container input').clear().sendKeys('instantlogin@instantlogin.com');
-        //$('.email.input-container button').click();
-        //var pageContent = $('#page-content');
-        //waitLocation(pageContent, {x: 0});
-        //expect($('#zapps-container  .zapp-add').isDisplayed()).toBeTruthy();
+        $('#login-view .form-container .email.input-container input').clear().sendKeys('instantlogin@instantlogin.com');
+
+        console.log('6 ');
+
+        $('.email.input-container button').click();
+        console.log('7 ');
+
+        var pageContent = $('#page-content');
+        console.log('8 ');
+
+        waitLocation(pageContent, {x: 0});
+
+        expect($('#zapps-container  .zapp-add').isDisplayed()).toBeTruthy();
     });
 });
