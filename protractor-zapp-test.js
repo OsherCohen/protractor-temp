@@ -125,7 +125,7 @@ describe('login', function() {
 
     it('will will login to wrapper@eggplant', function () {
         enterLoginPage('wrapper@eggplant.com', 'capriza123');
-
+        ptor.sleep(10000)
     });
 
     it('will run EggPlant-zap zapp',function() {
