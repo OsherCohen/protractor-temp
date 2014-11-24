@@ -131,6 +131,10 @@ describe('login', function() {
     it('will run EggPlant-zap zapp',function(){
         RunZappByName('testing');
         ptor.sleep(10000)
+        wdBrowser.contexts().then(function (contexts) {
+            console.log(contexts);
+            wdBrowser.context(contexts[2]);
+        });
         $('#page0mc43input').sendKeys('sfdemo@capriza.com')
         ptor.sleep(10000);
     })
