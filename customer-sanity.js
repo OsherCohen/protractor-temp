@@ -62,7 +62,7 @@ describe('customer-sanity', function() {
         element(by.model('login.email')).clear().sendKeys(username);
 
         // add password
-        element(by.model('login.password')).clear().sendKeys(azirpac321);
+        element(by.model('login.password')).clear().sendKeys('azirpac321');
 ptor.sleep(1000);
         submitButton = $('.input-container.password-login-button button');
         expect(submitButton.isDisplayed()).toBeTruthy();
