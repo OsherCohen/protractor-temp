@@ -91,6 +91,12 @@ describe('login', function() {
         $('#mode-switcher').click();
     }
 
+    function RunZappByName(ZappName){
+        var zapp = element(by.cssContainingText('.ng-binding',ZappName));
+        zapp.click();
+    }
+
+
     it('should change to the store context', function () {
         wdBrowser.contexts().then(function (contexts) {
             console.log(contexts);
@@ -119,6 +125,12 @@ describe('login', function() {
 
     it('will will login to wrapper@eggplant', function () {
         enterLoginPage('wrapper@eggplant.com', 'capriza123');
-    ptor.sleep(10000);
     });
+
+    it('will run EggPlant-zap zapp',function(){
+        RunZappByName('testing');
+        ptor.sleep(10000)
+        $('#page0mc43input').sendKeys('sfdemo@capriza.com')
+        ptor.sleep(10000);l
+    })
 });
